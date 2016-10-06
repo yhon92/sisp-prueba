@@ -4,12 +4,16 @@ var http = require('http').Server(app);
 
 const PORT = 3000;
 
-app.use('/public', express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+app.get('*', (req, res, next) => {
+  if (req.accepts('html')) {
+    res.sendFile(__dirname + '/public/index.html');
+  } else {
+    next();
+  }
 });
 
 http.listen(PORT, () => {
-  console.log(`listening on localhost:${PORT}`);
+  console.log(`Servidor corriendo en localhost:${PORT}`);
 });
