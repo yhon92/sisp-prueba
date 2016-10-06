@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-acl": "^0.1.7",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.1.1",
+    "angular-material-icons": "^0.7.1",
+    "angular-sanitize": "^1.5.8",
+    "angular-ui-router": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^6.0.0-11",
+    "laravel-elixir-vue": "^0.1.8",
+    "laravel-elixir-webpack-official": "^1.0.6",
+    "lodash": "^4.16.3",
+    "vue": "^2.0.1",
+    "vue-resource": "^1.0.3"
+  },
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  }
+}
