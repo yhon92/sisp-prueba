@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 
-const PORT = 3000;
+const PORT = 8888;
 
 app.use(express.static(__dirname + '/public'));
 

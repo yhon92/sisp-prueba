@@ -1,5 +1,6 @@
 const elixir = require('laravel-elixir');
 
+require('laravel-elixir-livereload');
 require('laravel-elixir-vue');
 
 /*
@@ -13,7 +14,10 @@ require('laravel-elixir-vue');
  |
  */
 
-elixir(mix => {
+ elixir(mix => {
   mix.webpack('./develop/js/app.js', 
-              './public/js/app.js');
+            './public/js/app.js');
+  mix.sass('./develop/css/main.sass', 
+            './public/css/main.css');
+  mix.livereload();
 });

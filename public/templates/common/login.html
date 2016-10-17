@@ -1,0 +1,26 @@
+<!-- <div flex-xs flex-gt-xs="30" layout="column"> -->
+<div layout="column" layout-align="center center">
+  <md-card>
+    <img ng-src="/images/logo.png" class="md-card-image" alt="Organización El Tunal">
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Iniciar Sesión</span>
+      </md-card-title-text>
+    </md-card-title>
+    <form ng-submit="$ctrl.onSubmit()">
+      <md-card-content>
+        <md-input-container>
+          <label>Cédula</label>
+          <input ng-model="$ctrl.usuario.cedula" type="text" required>
+        </md-input-container>
+        <md-input-container>
+          <label>Contraseña</label>
+          <input ng-model="$ctrl.usuario.password" type="password" required>
+        </md-input-container>
+      </md-card-content>
+      <md-card-actions layout="row" layout-align="end center">
+        <md-button class="md-primary md-raised md-hue-4" type="submit">Iniciar</md-button>
+      </md-card-actions>
+    </form>
+  </md-card>
+</div>
