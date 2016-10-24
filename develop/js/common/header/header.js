@@ -5,7 +5,7 @@ const header = angular
   .module('header', [
     // dasdas
     ])
-  .component('sispHeader', HeaderComponent)
+  .component('sHeader', HeaderComponent)
   .name;
 
 export default header;

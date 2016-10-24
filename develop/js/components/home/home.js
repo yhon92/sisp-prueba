@@ -6,11 +6,15 @@ const home = angular
   .module('home', [])
   .service('HomeService', HomeService)
   .component('home', HomeComponent)
-  .config(($stateProvider) => {
+  .config(($stateProvider, AclServiceProvider) => {
+    AclServiceProvider.resume();
     $stateProvider
       .state('home', {
         url: '/',
-        component: 'home'
+        component: 'home',
+        /*resolve: {
+          can: (AclService) => {return AclService.can}
+        }*/
       })
   })
   .name;

@@ -4,6 +4,7 @@ export default ($q, $injector, $rootScope) => {
       // Need to use $injector.get to bring in $state or else we get
       // a circular dependency error
       let $state = $injector.get('$state');
+      let $auth = $injector.get('$auth');
       // Instead of checking for a status code of 400 which might be used
       // for other reasons in Laravel, we check for the specific rejection
       // reasons to tell us if we need to redirect to the login state
@@ -16,6 +17,8 @@ export default ($q, $injector, $rootScope) => {
           // If we get a rejection corresponding to one of the reasons
           // in our array, we know we need to authenticate the user so 
           // we can remove the current user from local storage
+          $auth.logout();
+          sessionStorage.removeItem('AclService');
           sessionStorage.removeItem('user');
           $rootScope.authenticated = false;
           $rootScope.currentUser = null;

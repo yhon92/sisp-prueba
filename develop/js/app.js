@@ -11,7 +11,8 @@ import material from 'angular-material';
 import sanitize from 'angular-sanitize';
 import uiRouter from 'angular-ui-router';
 import authToken from 'satellizer';
-
+import loadingBar from 'angular-loading-bar';
+import 'angular-acl';
 import Constant from './common/contant';
 
 import { AppComponent } from './app.component';
@@ -27,6 +28,8 @@ const root = angular
     sanitize,
     uiRouter,
     authToken,
+    loadingBar,
+    'mm.acl',
     Constant,
     Common,
     Components,

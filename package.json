@@ -5,11 +5,12 @@
     "angular-acl": "^0.1.7",
     "angular-animate": "^1.5.8",
     "angular-aria": "^1.5.8",
+    "angular-loading-bar": "^0.9.0",
     "angular-material": "^1.1.1",
     "angular-material-icons": "^0.7.1",
     "angular-sanitize": "^1.5.8",
-    "angular-ui-router": "^1.0.0-beta.3",
-    "ng-annotate": "^1.2.1"
+    "angular-ui-router": "^1.0.0-alpha.5",
+    "satellizer": "^0.15.5"
   },
   "devDependencies": {
     "express": "^4.14.0",
@@ -17,7 +18,7 @@
     "laravel-elixir": "^6.0.0-11",
     "laravel-elixir-livereload": "^1.1.6",
     "laravel-elixir-vue": "^0.1.8",
-    "laravel-elixir-webpack-official": "^1.0.6",
+    "laravel-elixir-webpack-official": "^1.0.8",
     "lodash": "^4.16.3",
     "vue": "^2.0.1",
     "vue-resource": "^1.0.3"
